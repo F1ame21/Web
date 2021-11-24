@@ -1,0 +1,158 @@
+body {
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+}
+.container{
+	width: 70%  ;
+	margin: 0 auto; /*по центру*/
+
+}
+div{
+	box-sizing: border-box;
+}
+li{
+	list-style: none; /*убираем маркеры*/
+}
+
+a {
+	color: #000;
+	text-decoration: none; /*убираем эфекты текста*/
+}
+
+
+.header__section{
+	display: flex;
+	align-items: center; /*горизонтальное выравнивание*/
+	justify-content: space-between;
+	padding: 10px;
+}
+.main-menu{
+	display: flex;
+}
+.main-menu a{
+	text-transform: uppercase; /* заглавными */
+	font-size: 25px; /*размер текста*/
+	font-weight: 600; /*толщина текста*/
+	margin-right: 20px; /*отсутпы между элементами*/
+}
+.main-menu a:hover{
+	text-decoration: underline; /*подчеркивание текста*/
+}
+
+#New{
+
+}
+
+#menu-checkbox{
+	display:none ;
+}
+
+.logo{
+	width: 100px; /*размер картинки*/
+}
+
+h1 {
+	font-size: 75px;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 25px;
+
+}
+.images{
+	margin-top: 25px;
+	flex-wrap: wrap; /*многострочно ратсавлять картинки*/
+	display: flex;
+}
+
+.images div{
+	flex: auto;
+	width: 300px;
+	margin: .5vw;
+}
+.images div img{
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+
+}
+.images:hover img{
+	opacity: 0.6;
+	transition: .4s opacity;
+}
+.images:hover img:hover{
+	opacity: 1;
+	transition: 1.8s opacity;
+}
+
+h4{
+	font-size: 20px;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 55px;
+}
+.footer-menu {
+	text-align: center; /* пункты и текст горизонтально по центру */
+}
+.footer-menu li{
+	 display:inline-block; /* расположить пункты горизонтально */
+	 text-align: center; /* текст горизонтально по центру */
+}
+
+
+.footer-menu a{
+	display: block;
+	text-transform: uppercase; /* заглавными */
+	font-size: 15px; /*размер текста*/
+	font-weight: 400; /*толщина текста*/
+	margin-right: 20px; /*отсутпы между элементами*/
+}
+
+.footer-menu a:hover{
+	text-decoration: underline; /*подчеркивание текста*/
+}
+.footer{
+	font-size: 23;
+}
+
+.time{
+	font-size: 35;
+	text-align: center;
+
+}
+@media screen and (max-width:  1024px) {
+	.header__section{
+		width: 80%;
+	}
+	.main-menu{
+		display: none;
+	}
+	.main-menu a{
+		display: block;
+		padding: 5px;
+	}
+	.toggle-button{
+		position: absolute;
+		cursor: pointer;
+		font-size: 30px;
+		color: #000;
+	}
+	.toggle-button:after{
+		content: attr(data-open);
+		display: block;		
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .main-menu{
+		display: block;
+	}
+	.header__section a{
+		margin-right: -125px;
+		
+	}
+	.main-menu{
+		position: relative;
+		top: 10px;
+		right: 45px;
+	}
+}

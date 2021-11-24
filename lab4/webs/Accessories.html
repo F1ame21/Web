@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <title>Qwerty</title>
+      <link rel="stylesheet" href="New.css">
+      <script>window.startTime = (new Date).getTime();</script>
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div class="header__section">
+               <img src="images/logo.jpg" alt="logo" class="logo">
+               <input type="checkbox" id="menu-checkbox">
+               <nav role= "navigation">
+                  <label for="menu-checkbox" class="toggle-button" data-open="Menu" onclick></label>
+                  <ul class="main-menu">
+                     <li><a id = "New" href="New.html" >Новинки</a></li>
+                     <li><a id = "Brand" href="Brand.html" >Бренды</a></li>
+                     <li><a id = "Men" href="Men.html" >Мужское</a></li>
+                     <li><a id = "Women" href="Women.html" >Женское</a></li>
+                     <li><a id = "Accessories" class="active" href="Accessories.html" >Аксессуары</a>
+                  </ul>
+               </nav>
+            </div>
+            <div class="titels">
+               <h1>Qwerty</h1>
+            </div>
+         </div>
+      </header>
+      <footer class = "footer">
+         <div class="container">
+            <div id="p1"></div>
+            <script>window.addEventListener('load', (function () {
+               document.getElementById("p1").innerHTML = ((new Date).getTime() - window.startTime);
+               })());
+            </script>
+         </div>
+      </footer>
+   </body>
+</html>

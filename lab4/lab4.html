@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Qwerty</title>
+	<link rel="stylesheet" href="style.css">
+	<script>window.startTime = (new Date).getTime();</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header__section">
+				<img src="images/logo.jpg" alt="logo" class="logo">
+				<input type="checkbox" id="menu-checkbox">
+				<nav role= "navigation">
+				<label for="menu-checkbox" class="toggle-button" data-open="Menu" onclick></label>
+				<ul class="main-menu">
+            		<li><a id = "New" href="webs/New.html" >Новинки</a></li>
+            		<li><a id = "Brand" href="webs/Brand.html" >Бренды</a></li>
+            		<li><a id = "Men" href="webs/Men.html" >Мужское</a></li>
+            		<li><a id = "Women" href="webs/Women.html" >Женское</a></li>
+            		<li><a id = "Accessories" href="webs/Accessories.html" >Аксессуары</a></li>
+        		</ul>
+        		</nav>
+        	</div>
+        	<div class="titels">
+				<h1>Qwerty</h1>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="main__section">
+				<div class="images">
+					<div><img src="images/men2.jpg" alt=""></div>
+					<div><img src="images/women2.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer >
+		<div class="container">
+			<div>
+				<h4 class="titels__fotter">О нас</h4>
+			</div>
+			<div>      		
+        	<ul class="footer-menu">
+            	<li><a href="">Vk</a></li>
+            	<li><a href="">Instagram</a></li>
+            	<li><a href="">Facebook</a></li>
+        	</ul>
+        	</div> 
+
+    		<div class = "time" id="p1"></div>
+			<script src="script.js"></script>
+		</div>
+	</footer>
+</body>
+</html>
