@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+.container{
+  padding: 15px;
+}
+
+
+table {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto ;
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+}
+
+.table th, .table td{
+  text-align: center; /*централизируем содержимое ячеек*/
+  padding: 10px;  /*Внутрений отступ*/
+}
+
+.table th{
+  background-color: #1e88e5;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.table tr:nth-child(odd) td {
+  background: #f8f6ff;            /*для нечетных строк серый цвет*/
+}
+
+.table tr:nth-child(even) td {
+  background: #a8f6ff;            /*для нечетных строк серый цвет*/
+}
+
+.table td,th:not(:last-child){
+  border-right: 1px solid #000;
+}
+
+.table td,th:not(:last-child){
+  border-bottom: 1px solid #000;
+}
+
+.table-responsive{
+  overflow-x: auto;
+}
