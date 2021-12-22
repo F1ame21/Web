@@ -1,0 +1,74 @@
+* { /*обнуляет поле*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial; /*шрифт на странице*/
+  background-color: yellow; /*цвет фона*/
+  margin: 0 auto;
+  color: black; /*цвет букв*/
+}
+header{
+  font-size: 2rem;
+}
+
+header,
+form{
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; /*горизонтальное выравнивание*/
+}
+
+form input,
+form button{
+  padding: 0.5rem; /*добавим отступы*/
+  font-size: 2rem; /*добавим размер шрифту*/
+  border: none; /*убираем границы*/
+  background: white;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#result {
+  min-width: 30%;
+  list-style: none;
+}
+#btn {
+  cursor: pointer;
+}
+.btn {
+  border: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.li {
+  min-height: 5vh;
+  font-size: 2rem;
+  background: white;
+  border: 1px solid black;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+.li .btn{
+    font-size: 2rem;
+    display: inline-block;
+    text-decoration: none;
+}
+.li-active{
+  color: white;
+  background: black;
+}
+.li-active .btn{
+  font-size: 2rem;
+  color: black;
+  background: white;
+}
